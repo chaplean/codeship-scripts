@@ -1,0 +1,19 @@
+{
+    "name": "chaplean/codeship-scripts",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "description": "Codeship scripts to automatically install in your bin directory",
+    "authors": [
+        {
+            "name": "Chaplean",
+            "homepage": "http://www.chaplean.coop"
+        }
+    ],
+    "bin": [
+        "bin/phpunit.sh",
+        "bin/services-waiting.sh"
+    ],
+    "config": {
+        "bin-dir": "bin"
+    }
+}

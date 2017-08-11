@@ -1,0 +1,11 @@
+# Auto-saved files
+*~
+
+# Mac
+.DS_store
+
+# PhpStorm
+.idea
+
+# Composer
+/composer.phar

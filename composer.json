@@ -10,6 +10,8 @@
         }
     ],
     "bin": [
+        "bin/deploy.sh",
+        "bin/deploy-htaccess.sh",
         "bin/phpunit.sh",
         "bin/services-waiting.sh"
     ],

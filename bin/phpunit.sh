@@ -15,4 +15,5 @@ fi
 
 echo "MySQL is launched, we execute PHPUnit"
 
+./bin/console doctrine:schema:create -q --env=test > /dev/null
 ./bin/phpunit --configuration ./phpunit-$1.xml --coverage-clover build/logs/clover-$1.xml

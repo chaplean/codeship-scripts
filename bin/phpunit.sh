@@ -21,8 +21,5 @@ echo "MySQL is launched, we execute PHPUnit"
 # Reset Elastica database if necessary
 ./bin/console fos:elastica:reset -e test > /dev/null
 
-# Clear Cache
-./bin/console cache:clear -e test > /dev/null
-
 # Launch PHPUnit
 ./bin/phpunit --configuration ./phpunit-$1.xml --coverage-clover build/logs/clover-$1.xml

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 _pwd=`pwd`
-file='web/.htaccess.deploy'
+file='public/.htaccess.deploy'
 
 function help {
     printf "Use deploy-htaccess:\n"
@@ -18,16 +18,16 @@ fi
 function htpasswd() {
     pwd=${_pwd//\//\\/}
 
-    sed 's/#%allowhtpasswd%//g' $file > 'web/.htaccess'
-    file='web/.htaccess'
-    sed -i 's/%htpasswd%/'$pwd'\/web/g' $file
+    sed 's/#%allowhtpasswd%//g' $file > 'public/.htaccess'
+    file='public/.htaccess'
+    sed -i 's/%htpasswd%/'$pwd'\/public/g' $file
 }
 
 function deploy() {
     if [[ $file =~ 'deploy' ]]
     then
-        sed 's/%_env%/'$_env'/g' $file > 'web/.htaccess'
-        file='web/.htaccess'
+        sed 's/%_env%/'$_env'/g' $file > 'public/.htaccess'
+        file='public/.htaccess'
     else
         sed -i 's/%_env%/'$_env'/g' $file
     fi

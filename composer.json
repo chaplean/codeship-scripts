@@ -1,8 +1,8 @@
 {
-    "name": "chaplean/codeship-scripts",
+    "name": "chaplean/continuous-integration-scripts",
     "license": "MIT",
     "type": "symfony-bundle",
-    "description": "Codeship scripts to automatically install in your bin directory",
+    "description": "Deploy scripts to automatically install in your bin directory",
     "authors": [
         {
             "name": "Chaplean",

@@ -1,7 +1,7 @@
-Getting Started With Chaplean Codeship Scripts
+Getting Started With Chaplean Continuous Integration Scripts
 ==============================================
 
-This bundles installs some scripts in your bin/ repositories usable with Codeship.
+This bundles installs some scripts in your bin/ repositories usable with Codeship/Gitlab/...
 
 ## Scripts
 
